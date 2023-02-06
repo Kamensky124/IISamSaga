@@ -61,12 +61,10 @@ function App() {
                         : 'http://placehold.co/48'
 
                     const key = todolist.id.toString()
-console.log(key)
 
                     return (
-                        <div>
-                            <div></div>
-                            <img src={imageUrl} />
+                        <div key={key}>
+                            <img src={imageUrl}/>
                             <h3>
                                 {todolist.isImportant ? '!' : ''}
                                 <div>{todolist.title}</div>
